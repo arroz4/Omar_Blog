@@ -1,0 +1,69 @@
+{% extends 'blog/base.html' %}
+  {% load static %}
+  {% block content %}
+  <div class="jumbotron">
+    <h1>Galería fotográfica</h1>
+    <h3 class="text-justify">Me dijo un hombre alguna vez, "estar rodeado de la gente que quieres, ¿acaso no es eso lo mas importante?".</h3>
+
+  </div>
+  <div class="container">
+    <div class="row">
+     <div class="col-md-4">
+       <div class="thumbnail">
+           <img class="top1"src="{% static 'gallery/mem1.jpg' %}" alt="Not found" style="width:100%">
+           <div class="caption ">
+             <p class="text-justify">Una foto de año nuevo en la bella playa de San Carlos con mis cuñadas y mi adorada novia. Siempre es menester un roadtrip para mejorar el humor.(Dic,2019)</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+           <img src="{% static 'gallery/mem2.jpg' %}" alt="Not found" style="width:100%">
+           <div class="caption">
+             <p class="text-justify">Una foto de viaje por Austria rodeado de mi familia.(2019)</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+           <img src="{% static 'gallery/mem3.jpg' %}" alt="Not found" style="width:100%">
+           <div class="caption">
+             <p class="text-justify">Una foto con mis padres que tanto quiero. Grandes ejemplos a seguir como personas y profesionistas.(2019)</p>
+           </div>
+       </div>
+     </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="row">
+     <div class="col-md-4">
+       <div class="thumbnail">
+           <img src="{% static 'gallery/mem4.jpg' %}" alt="Not found" style="width:100%">
+           <div class="caption">
+             <p class="text-justify">No tengo palabras para explicar mi admiración por mi abuelo. Veterano de Cruz Roja Mexicana por mas de 60 años, se crió en los campos de caña de Santa Cruz de Alayá, Sinaloa y lucho contra la adversidad para darle estudios a todos sus hijos. Hemos de recordar su frase celebre "Tómate la vida a juego". (2019)</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+           <img src="{% static 'gallery/mem5.jpg' %}" alt="Not found" style="width:100%">
+           <div class="caption">
+             <p class="text-justify">Una foto de mi viaje a Colombia con mi amigo Hugo. Toda una experiencia formativa estar expuesto a nuevas culturas.(2019)</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+           <img id="top1" src="{% static 'gallery/mem6.jpg' %}" alt="Not found" style="width:100%;height:auto;">
+           <div class="caption">
+             <p class="text-justify">Una fotografía tomada durante mis prácticas profesionales universitarias en Gamesa. Me veo muy contento junto a mi línea de emperador limón.(2018)</p>
+           </div>
+       </div>
+     </div>
+    </div>
+
+  </div>
+
+
+  {% endblock %}

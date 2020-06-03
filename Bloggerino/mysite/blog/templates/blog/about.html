@@ -1,0 +1,47 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+  {% block content %}
+  <div class="jumbotron">
+    <h1>Acerca de mí</h1>
+  </div>
+  <h3 class=" lead text-justify">Mi nombre es Omar Barrera Tapia. Originario de Cd. Obregón, Sonora.
+    Soy ingeniero industrial egresado de la Universidad la Salle.
+    Es complicado describirme a mi mismo, me atrevo a decir que soy como el fuego. Apasionado en todos los
+    sentidos. Mi palabra favorita es 'Wissendurst' que significa sed de conocimiento en Alemán. Entre las cosas
+    que me llaman la atención esta la escritura, la música, el cine, la lectura y la informática.</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="">
+        <div class="col-md-4">
+          <br>
+          <br>
+
+          <div class="thumbnail">
+            <img src="{% static 'aboutimg/bio3.jpeg' %}" alt="Not found">
+          </div>
+        </div>
+        <div class=" col-md-8">
+          <div class="page-header">
+            <h1>Biografía <small>Mitología Barreriana</small></h1>
+          </div>
+          <div class="well well-lg">
+            <h3 class=" lead text-justify">
+              Nací en Cd.Obregón un 13 de Mayo de 1994 en el Hospital Santa Margarita y
+              segun cuenta la historia rodeado de algunas monjitas. Mis padres muy felices
+              de tener su primer hijo me atesoraron y al igual que mis abuelos. Crecí
+              rápidamente, comence a hablar con claridad a los dos años y medio. Poco después
+              nacería mi hermana Cinthya con quien compartiría el escenario del vinculo sanguíneo
+              con todas sus aventuras y desventuras. [Continuará]
+
+            </h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  {% endblock %}

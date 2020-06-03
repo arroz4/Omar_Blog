@@ -1,0 +1,51 @@
+{% extends 'blog/base.html' %}
+  {% load static %}
+  {% block content %}
+  <div class="jumbotron">
+    <h1>Información de contacto</h1>
+    <h3>Si necesitas contactarme puedes acceder a mi información aqui. </h3>
+  </div>
+  <div class="container">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+
+      <div class="panel-heading">
+        <h2>Contacto en línea</h2>
+        </div>
+      <div class="panel-body">
+        <h3>Para contactarme sientete libre de mandarme un mensaje a cualquiera de mis redes. Especifica quién eres y el asunto que quieres tratar. Respondere lo antes posible a tu mensaje.</h3>
+      </div>
+
+      <!-- List group -->
+      <ul class="list-group">
+        <h3>
+        <li class="list-group-item">Email: omarb22@gmail.com </li>
+        <li class="list-group-item">Facebook: <a href="https://www.facebook.com/omar.barrera.712/">Omar Barrera</a></li>
+        <li class="list-group-item">LinkedIn: <a href="https://www.linkedin.com/in/omar-barrera-57484a86">Omar Barrera</a></li>
+        <li class="list-group-item">Github: <a href="https://github.com/arroz4">Omar Barrera</a></li>
+        </h3>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-footer">
+        <h2>Aqui puedes descargar mi CV en formato PDF:</h2>
+      </div>
+      <div class="panel-body">
+        <ul>
+          <!-- pendiente agregar CV ingles -->
+          <li><h3><a href="{% static 'pdf/OBarrera_esp.pdf'%}" download>Currículum en español</a></h3></li>
+          <li><h3><a href="{% static 'pdf/OBarrera_eng.pdf'%}" download>Currículum en inglés</a></h3></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  {% endblock %}

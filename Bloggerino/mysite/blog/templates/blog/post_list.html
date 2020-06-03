@@ -1,0 +1,55 @@
+{% extends 'blog/base.html' %}
+  {% load static %}
+  {% block content %}
+
+
+<!-- Columna IZQUIERDA -->
+
+    <div class="col-md-8">
+      <div class="loader jumbotron">
+        <h1 class="">Bienvenido a mi Blog!</h1>
+        <h3 class="text-justify">Este es mi blog donde estaré publicando temas que me parecen interesantes.
+          Esta es una página creada por mi utilizando Django y Bootstrap 3.
+          Considero este un espacio donde puedo hablar
+          libremente de mis proyectos personales, desventuras y reflexiones. Acompañame.</h3>
+      </div>
+      <div class="container">
+        <div class="">
+          {% for post in post_list %}
+
+          <div class="">
+            <h2>
+              <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a>
+            </h2>
+            <div class="date">
+              <p>Published on: {{post.published_date|date:"D M Y"}}</p>
+            </div>
+            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{post.approve_comments.count}}</a>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+
+<!-- COLUMNA DERECHA -->
+    <div class="">
+    </div>
+    <div class="rows">
+
+        <div class="col-md-4 ">
+          <div class="img-fluid img-thumbnail thumbnail">
+            <img class=""src="{% static "test.JPG" %}" alt="No image found">
+            <div class="caption">
+              <h3>Acerca de mí</h3>
+              <p class="text-justify">
+                Mi nombre es Omar Barrera Tapia. Originario de Cd. Obregón, Sonora. Soy ingeniero industrial egresado de la Universidad la Salle.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+    </div>
+
+  {% endblock %}
